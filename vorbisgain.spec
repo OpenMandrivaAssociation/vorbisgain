@@ -67,6 +67,6 @@ rm -rf %buildroot
 %_bindir/*
 %defattr(0644,root,root,0755)
 %doc NEWS  README
-%_mandir/man1/*1.bz2
+%_mandir/man1/*1*
 
 
