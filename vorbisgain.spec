@@ -15,6 +15,7 @@ URL:            http://sjeng.sourceforge.net/vorbisgain.html
 # http://sjeng.org/ftp/vorbis/vorbisgain-0.32.zip
 Source0:        http://sjeng.org/ftp/vorbis/%name-%version.tar.bz2
 Patch1:		%name-patch-configure.bz2
+BuildRoot:      %_tmppath/%name-buildroot
 Buildrequires:  oggvorbis-devel libogg-devel
 
 
