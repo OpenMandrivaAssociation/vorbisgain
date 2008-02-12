@@ -20,7 +20,6 @@ Buildrequires:  oggvorbis-devel libogg-devel
 
 
 %description
-
 VorbisGain is a utility that uses a psychoacoustic method to correct the
 volume of an Ogg Vorbis file to a predefined standardized loudness.
 
