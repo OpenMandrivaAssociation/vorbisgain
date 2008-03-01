@@ -1,5 +1,5 @@
 %define name    vorbisgain
-%define version 0.36
+%define version 0.37
 %define release %mkrel 1
 %define summary Adds tags to Ogg Vorbis files to adjust the volume
 
