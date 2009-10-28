@@ -1,6 +1,6 @@
 %define name    vorbisgain
 %define version 0.37
-%define release %mkrel 5
+%define release %mkrel 6
 %define summary Adds tags to Ogg Vorbis files to adjust the volume
 
 Summary:        %summary
@@ -15,6 +15,7 @@ URL:            http://sjeng.sourceforge.net/vorbisgain.html
 # http://sjeng.org/ftp/vorbis/vorbisgain-0.32.zip
 Source0:        http://sjeng.org/ftp/vorbis/%name-%version.tar.bz2
 Patch1:		%name-patch-configure.bz2
+Patch2:		%name-fix-str-fmt.patch
 BuildRoot:      %_tmppath/%name-buildroot
 Buildrequires:  oggvorbis-devel libogg-devel
 
@@ -45,6 +46,7 @@ compatible. xmms will support this feature from release 1.2.8.
 %prep
 %setup -q
 %patch1
+%patch2 -p0
 
 %build
 %__chmod 755 configure
