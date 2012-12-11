@@ -71,3 +71,60 @@ rm -rf %buildroot
 %_mandir/man1/*1*
 
 
+
+
+%changelog
+* Wed Oct 28 2009 RÃ©my Clouard <shikamaru@mandriva.org> 0.37-6mdv2010.0
++ Revision: 459826
+- fix build (string format error)
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - rebuild
+    - rebuild
+
+* Wed Jul 30 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.37-3mdv2009.0
++ Revision: 255593
+- rebuild
+
+* Sat Mar 01 2008 Michael Scherer <misc@mandriva.org> 0.37-1mdv2008.1
++ Revision: 177313
+- update to new version 0.37
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - fix spacing at top of description
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Dec 17 2007 Thierry Vignaud <tvignaud@mandriva.com> 0.36-1mdv2008.1
++ Revision: 129215
+- kill re-definition of %%buildroot on Pixel's request
+- do not hardcode man pages extension
+- import vorbisgain
+
+
+* Thu Jun 02 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.36-1mdk
+- New release 0.36
+- %%mkrel
+
+* Thu Jun 02 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.34-3mdk
+- Fix Source
+
+* Mon Nov 08 2004 Lenny Cartier <lenny@mandrakesoft.com> 0.34-2mdk
+- rebuild
+
+* Sun Oct 12 2003 Han Boetes <han@linux-mandrake.com> 0.34-1mdk
+- Bump!
+
+* Mon Apr 21 2003 Han Boetes <han@linux-mandrake.com> 0.32-3mdk
+- Remove the patch again. OpenBSD-guru's say it's nonsense and
+  vorbisgain segfaults.
+- Added a patch to clean up configure
+
+* Tue Mar 18 2003 Han Boetes <han@linux-mandrake.com> 0.32-2mdk
+- added patches and updates that can also be found in the OpenBSD-port
+- mplayer and ogg123 support this extension BTW :)
+
+* Tue Mar  4 2003 Han Boetes <han@linux-mandrake.com> 0.32-1mdk
+- This rpm works, the program works, just nothing supports it yet.
+  We have to wait for xmms-1.2.8. Ow well. :)
