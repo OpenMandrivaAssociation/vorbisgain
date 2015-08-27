@@ -1,3 +1,4 @@
+removed_sources:
+  vorbisgain-0.37.tar.bz2: 42056a25c86e972bbfd0ffc1b129d78df85ce835
 sources:
-  "vorbisgain-0.37.tar.bz2": 42056a25c86e972bbfd0ffc1b129d78df85ce835
-  "vorbisgain-patch-configure.bz2": b89996e23a7e15aab5c7543e7e658ca055ab91d7
+  vorbisgain-0.37.tar.gz: bd79764a83a8ee327df85c538ec798a6d3f240be
