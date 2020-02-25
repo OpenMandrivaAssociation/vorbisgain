@@ -1,7 +1,7 @@
 Summary:	Adds tags to Ogg Vorbis files to adjust the volume
 Name:		vorbisgain
 Version:	0.37
-Release:	8
+Release:	9
 License:	GPLv2+
 Group:		Sound
 Url:		http://sjeng.sourceforge.net/vorbisgain.html
@@ -48,9 +48,9 @@ compatible. xmms will support this feature from release 1.2.8.
 
 %build
 chmod 755 configure
-%configure2_5x --enable-recursive
-%make
+%configure --enable-recursive
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
