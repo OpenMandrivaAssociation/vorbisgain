@@ -4,7 +4,7 @@ Version:	0.37
 Release:	9
 License:	GPLv2+
 Group:		Sound
-Url:		http://sjeng.sourceforge.net/vorbisgain.html
+Url:		https://sjeng.sourceforge.net/vorbisgain.html
 # http://sjeng.org/ftp/vorbis/vorbisgain-0.32.zip
 Source0:	http://sjeng.org/ftp/vorbis/%{name}-%{version}.tar.gz
 Patch1:		vorbisgain-patch-configure.patch
