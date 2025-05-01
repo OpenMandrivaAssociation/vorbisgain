@@ -1,0 +1,22 @@
+diff -urN vorbisgain-0.37/configure vorbisgain-0.37-c99/configure
+--- vorbisgain-0.37/configure	2005-07-14 23:50:59.000000000 +0100
++++ vorbisgain-0.37-c99/configure	2025-05-01 21:11:32.375452772 +0100
+@@ -3894,6 +3894,7 @@
+ cat >>conftest.$ac_ext <<_ACEOF
+ /* end confdefs.h.  */
+ #include <ctype.h>
++#include <stdlib.h>
+ #if ((' ' & 0x0FF) == 0x020)
+ # define ISLOWER(c) ('a' <= (c) && (c) <= 'z')
+ # define TOUPPER(c) (ISLOWER(c) ? 'A' + ((c) - 'a') : (c))
+diff -urN vorbisgain-0.37/misc.c vorbisgain-0.37-c99/misc.c
+--- vorbisgain-0.37/misc.c	2004-01-03 21:17:28.000000000 +0000
++++ vorbisgain-0.37-c99/misc.c	2025-05-01 21:12:02.983322477 +0100
+@@ -23,6 +23,7 @@
+ #else /* WIN32 */
+ #include <errno.h>
+ #include <ctype.h>
++#include <unistd.h>
+ 
+ #ifndef DISABLE_WINSIZE
+ 
