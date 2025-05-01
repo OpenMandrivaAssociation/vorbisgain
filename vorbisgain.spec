@@ -1,14 +1,14 @@
-Summary:	Adds tags to Ogg Vorbis files to adjust the volume
 Name:		vorbisgain
 Version:	0.37
-Release:	9
-License:	GPLv2+
-Group:		Sound
-Url:		https://sjeng.sourceforge.net/vorbisgain.html
-# http://sjeng.org/ftp/vorbis/vorbisgain-0.32.zip
-Source0:	http://sjeng.org/ftp/vorbis/%{name}-%{version}.tar.gz
-Patch1:		vorbisgain-patch-configure.patch
-Patch2:		vorbisgain-fix-str-fmt.patch
+Release:	10
+License:	LGPL-2.1-only
+Group:		Sound/Utilities
+Summary:	Adds tags to Ogg Vorbis files to adjust the volume
+URL:		https://sjeng.org/vorbisgain.html
+Source0:	https://sjeng.org/ftp/vorbis/%{name}-%{version}.tar.gz
+Patch1:		vorbisgain-0.37-c99.patch
+BuildRequires:	make
+BuildRequires:	dos2unix
 BuildRequires:	pkgconfig(ogg)
 BuildRequires:	pkgconfig(vorbis)
 
@@ -34,17 +34,10 @@ the files without problems, but you'll miss out on the benefits.
 Nowadays most good players such as ogg123 and mplayer are already
 compatible. xmms will support this feature from release 1.2.8.
 
-%files
-%doc NEWS README
-%{_bindir}/*
-%{_mandir}/man1/*1*
-
-#----------------------------------------------------------------------------
 
 %prep
-%setup -q
-%patch1 -p0
-%patch2 -p0
+%autosetup -p1
+dos2unix -f COPYING NEWS
 
 %build
 chmod 755 configure
@@ -54,3 +47,8 @@ chmod 755 configure
 %install
 %make_install
 
+%files
+%{_bindir}/%{name}
+%{_mandir}/man1/%{name}.1*
+%doc NEWS README
+%license COPYING
